@@ -1,0 +1,21 @@
+{
+  "name": "Al-Qur'an Go · 30 Juz",
+  "short_name": "Al-Qur'an Go",
+  "description": "Al-Qur'an Go - Game hafalan Al-Qur'an 30 Juz untuk anak: Tebak Ayat, Tebak Arti, Murottal Offline per Ayat, Bintang & Kartu Hadiah.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#73C2FB",
+  "theme_color": "#73C2FB",
+  "lang": "id",
+  "categories": ["education", "games", "kids"],
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "192x192 512x512 any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

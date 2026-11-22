@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <clipPath id="appClip">
+      <rect width="512" height="512" rx="112"/>
+    </clipPath>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#65B9F8"/>
+      <stop offset="100%" stop-color="#C0E8FF"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#64D831"/>
+      <stop offset="100%" stop-color="#3C9B14"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF066"/>
+      <stop offset="55%" stop-color="#FFD400"/>
+      <stop offset="100%" stop-color="#FF9900"/>
+    </linearGradient>
+    <linearGradient id="cover" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38A11A"/>
+      <stop offset="100%" stop-color="#21680D"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#142B5E" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#appClip)">
+    <rect width="512" height="512" fill="url(#sky)"/>
+    <ellipse cx="96" cy="118" rx="56" ry="20" fill="#FFFFFF" opacity="0.45"/>
+    <ellipse cx="422" cy="136" rx="64" ry="22" fill="#FFFFFF" opacity="0.42"/>
+    <path d="M0 370 Q256 300 512 370 L512 512 L0 512 Z" fill="url(#grass)"/>
+
+    <g fill="#FFF59D">
+      <path d="M138 110 L144 126 L160 132 L144 138 L138 154 L132 138 L116 132 L132 126 Z"/>
+      <path d="M376 102 L381 114 L393 119 L381 124 L376 136 L371 124 L359 119 L371 114 Z"/>
+    </g>
+
+    <g filter="url(#softShadow)">
+      <path d="M256 54 L277 104 L331 108 L290 144 L303 196 L256 168 L209 196 L222 144 L181 108 L235 104 Z"
+            fill="url(#gold)" stroke="#142B5E" stroke-width="12" stroke-linejoin="round"/>
+      <path d="M256 76 L267 104 L294 106" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+    </g>
+
+    <g transform="translate(86, 204)" filter="url(#softShadow)">
+      <rect x="6" y="34" width="328" height="196" rx="26" fill="url(#cover)" stroke="#142B5E" stroke-width="12"/>
+      <rect x="156" y="38" width="28" height="188" rx="8" fill="#185009"/>
+      <path d="M26 22 Q100 8 170 40 L170 210 Q100 182 26 196 Z"
+            fill="#FFFDF5" stroke="#142B5E" stroke-width="10" stroke-linejoin="round"/>
+      <path d="M314 22 Q240 8 170 40 L170 210 Q240 182 314 196 Z"
+            fill="#FFF8E2" stroke="#142B5E" stroke-width="10" stroke-linejoin="round"/>
+      <path d="M161 198 L161 244 L170 233 L179 244 L179 198 Z" fill="#E5252A" stroke="#142B5E" stroke-width="6" stroke-linejoin="round"/>
+      <line x1="54" y1="74" x2="142" y2="83" stroke="#5AC82A" stroke-width="11" stroke-linecap="round"/>
+      <line x1="54" y1="110" x2="142" y2="119" stroke="#D8CEB0" stroke-width="10" stroke-linecap="round"/>
+      <line x1="54" y1="146" x2="128" y2="154" stroke="#D8CEB0" stroke-width="10" stroke-linecap="round"/>
+      <line x1="198" y1="83" x2="286" y2="74" stroke="#5AC82A" stroke-width="11" stroke-linecap="round"/>
+      <line x1="198" y1="119" x2="286" y2="110" stroke="#D8CEB0" stroke-width="10" stroke-linecap="round"/>
+      <line x1="212" y1="154" x2="286" y2="146" stroke="#D8CEB0" stroke-width="10" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
